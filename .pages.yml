@@ -17,6 +17,7 @@ content:
       - name: author
         label: Author
         type: object
+        list: true
         fields:
           - { name: name, label: Name, type: string }
           - { name: picture, label: Picture, type: image }
