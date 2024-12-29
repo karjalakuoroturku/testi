@@ -27,3 +27,12 @@ content:
         fields:
           - { name: url, label: URL, type: image, list: true }
       - { name: body, label: Body, type: rich-text }
+  - name: reviews
+    label: Arviot
+    type: collection
+    path: _reviews
+    view:
+      fields: [ title, date ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Date, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" } }
