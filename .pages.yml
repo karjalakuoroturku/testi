@@ -24,5 +24,5 @@ content:
         label: Image (social sharing)
         type: object
         fields:
-          - { name: url, label: URL, type: image }
+          - { name: url, label: URL, type: image, list: true }
       - { name: body, label: Body, type: rich-text }
