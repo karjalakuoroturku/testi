@@ -1,13 +1,7 @@
 ---
-title: "Preview Mode for Static Generation"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
+title: "Elämän Nälkä – Konsertti su 27.10.2024 klo 16.00 Martinsalissa"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
-author:
-  name: Joe Haddad
-  picture: "/assets/blog/authors/joe.jpeg"
-ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+date: "2024-10-27T16:00:00.000Z"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

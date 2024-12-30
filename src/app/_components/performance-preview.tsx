@@ -1,7 +1,5 @@
-import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import Avatar from "./avatar";
-import CoverImage from "./cover-image";
+import PerformanceCoverImage from "./performance-cover-image";
 import DateFormatter from "./date-formatter";
 
 type Props = {
@@ -9,27 +7,25 @@ type Props = {
   coverImage: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
 };
 
-export function PostPreview({
+export function PerformancePreview({
   title,
   coverImage,
   date,
   excerpt,
-  author,
   slug,
 }: Props) {
   return (
     <div>
       <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+        <PerformanceCoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link
-          as={`/posts/${slug}`}
-          href="/posts/[slug]"
+          as={`/esiintymiset/${slug}`}
+          href="/esiintymiset/[slug]"
           className="hover:underline"
         >
           {title}
@@ -39,7 +35,6 @@ export function PostPreview({
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
     </div>
   );
 }

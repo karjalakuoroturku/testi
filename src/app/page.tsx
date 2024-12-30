@@ -1,29 +1,28 @@
 import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
+import { HeroContentPage } from "@/app/_components/hero-content-page";
 import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "../lib/api";
+import { LatestPerformances } from "@/app/_components/latest-performances";
+import { getAllContentPages, getAllPerformances } from "../lib/api";
 
 export default function Index() {
-  const allPosts = getAllPosts();
+  const allPerformances = getAllPerformances();
+  const allContentPages = getAllContentPages();
 
-  const heroPost = allPosts[0];
+  const heroContentPage = allContentPages[0];
 
-  const morePosts = allPosts.slice(1);
+  const latestPerformances = allPerformances.slice(0, 3);
 
   return (
     <main>
       <Container>
         <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
+        <HeroContentPage
+          title={heroContentPage.title}
+          coverImage={heroContentPage.coverImage}
         />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {latestPerformances.length > 0 && (
+          <LatestPerformances performances={latestPerformances} />
+        )}
       </Container>
     </main>
   );
